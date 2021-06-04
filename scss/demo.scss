@@ -1,0 +1,48 @@
+/*Variables*/
+$ancho: 720px;
+
+/* Estilos de scss */
+
+/* BEM */
+/*Bloque - Padre*/
+.padre{
+/*propiedades*/
+}
+.contenedor{
+    /*propiedades*/
+}
+.tercerBloque{
+/*propiedades*/
+}
+.cuartoBloque{
+/*propiedades*/
+}
+/*Elementos - hijos de bloque*/ 
+.padre__hijo{
+width: $ancho;
+}
+.contenedor__rojo{
+width: $ancho*2;
+}
+.tercerBloque__azul{
+/*propiedades*/
+}
+.cuartoBloque__verde{
+/*propiedades*/
+}
+/* Modificadores*/ 
+.contenedor__rojo--modificador2{
+/*propiedades*/
+}
+.contenedor--modificador{
+/*propiedades*/
+}
+
+/**********************************************************************/
+/*BUCLES*/
+
+@for $var from 1 to 5 {
+ .item-#{$var}{
+     font-size: 2.5em / $var;
+ }
+}

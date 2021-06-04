@@ -1,0 +1,209 @@
+
+body {
+    
+}
+h1 {
+    display: flex;
+    color: #fff;
+    font-size: 100px;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+
+}
+
+h2 {
+    color: red;
+}
+
+/* Bordes anchos para los cuadros de la tabla*/
+th {
+    border: 3px solid;
+    background-color: #cccccc;
+    list-style: armenian;
+
+}
+p {
+    color: #cccccc;
+    font-size: 35px;
+    text-align: center;
+    width: 50%; 
+}
+/* Bordes para la tabla grande*/
+table {
+    border: 2px solid;
+}
+
+/*clases*/
+.bordesRedondeados {
+   border-radius: 90px;
+   border: solid rgb(14, 14, 143)
+}
+.masChica {
+    width: 750px;  
+    margin: 10px 400px 10px 600px;  
+}
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tituloFuente {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;      
+}
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.imagenFondoTitulo {
+    background:linear-gradient(0deg, rgba(18, 14, 58, 0.3), rgba(11, 0, 61, 0.3)), url(/multimedia/USA_Mountains_Lake_Sunrises_and_sunsets_535498_1920x1080.jpg); background-size:cover;
+    padding: 20px 0px 70vh 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.colorFondo {
+    background-color: rgb(6, 6, 36);
+    text-align: center; 
+    width: 44%;
+    height: 600px
+    
+}
+.colorFondo2 {
+    background-color: rgba(21, 21, 255, 0.219);
+    padding: 5px;
+    margin-top: -67px;
+    margin-left: -10px;
+    width: 1897px;
+}   
+
+.textoCentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoCentro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.horizontalDisplay {
+    display: flex;
+    flex-flow: row nowrap;
+    display: inline;
+}
+li {
+    display: flex;
+    display: inline;
+    margin: 0px 15px 0px 15px;
+    position: sticky;
+}
+
+.padreFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.margenEspacio{
+    margin-left: 10px;
+}
+.margenEspacio2{
+    margin-left: 200px;
+}
+
+.margenEspacioArriba{
+    margin-top: 10px;
+}
+
+.inicioDerecha{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: nowrap;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px 100px 10px;
+    grid-template-rows: 7px 7px 7px;
+    border: 1px solid #000;
+    margin-right: 1500px;
+    background-color: #cccccc;
+    margin-top: 10px;
+}
+.grid2 {
+    display: grid;
+    grid-template-rows: 0px 20px 20px 20px 20px;
+    border: 1px solid #000;
+    margin-right: 1500px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 100px 100px 10px;
+    grid-template-rows: 7px 7px 7px;
+    border: 1px solid #000;
+    margin-right: 1500px;
+}
+
+.degrade{
+    background-image: linear-gradient(to left,rgb(5, 5, 53),rgb(3, 3, 77));
+}
+.trans{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(3, 3, 36);
+    transition: height 2s;
+}
+.trans:hover{
+    height: 300px;
+}
+.transform{
+    transform: skew(1deg);
+}
+/*media Queries*/
+@media (min-width: 768px)/*mobile*/ {
+    .grid{
+        display: grid;
+        grid-template-columns: 100px 100px 10px;
+        grid-template-rows: 7px 7px 7px;
+        border: 1px solid #000;
+        margin-right: 1500px;
+        background-color: #cccccc;
+        margin-top: 10px;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-rows: 0px 20px 20px 20px 20px;
+        border: 1px solid #000;
+        margin-right: 1500px;
+    }
+    .grid3{
+        display: grid;
+        grid-template-columns: 100px 100px 10px;
+        grid-template-rows: 7px 7px 7px;
+        border: 1px solid #000;
+        margin-right: 1500px;
+
+}
+@media (max-width: 1200px)/*desktop*/{
+
+}
+
+@keyframes efecto {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
